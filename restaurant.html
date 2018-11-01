@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- Main CSS file -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <title>Restaurant Info</title>
+</head>
+
+<body class="inside">
+    <header>
+        <nav>
+            <h1><a href="/" role="navigation" aria-label="Title and link to homepage">Restaurant Reviews</a></h1>
+        </nav>
+
+        <ul id="breadcrumb" role="navigation" aria-label="Pages navigation">
+            <li><a href="/" role="navigation" aria-label="Link to homepage">Home</a></li>
+        </ul>
+
+
+    </header>
+
+    <main id="maincontent">
+
+        <section class="map-container-inside" role="application" aria-label="Map of the selected restaurants">
+            <div class="map" id="map_inside"></div>
+        </section>
+        <section id="restaurant-container">
+            <h2 id="restaurant-name"></h2>
+            <div id="image-container">
+
+
+                <img id="restaurant-img">
+            </div>
+
+            <div id="restaurant-info">
+                <h3 id="restaurant-cuisine"></h3>
+                <p id="restaurant-address"></p>
+                <table id="restaurant-hours"></table>
+            </div>
+        </section>
+
+        <section id="reviews-container">
+            <ul id="reviews-list"></ul>
+
+
+        </section>
+
+    </main>
+
+
+    <footer id="footer">
+
+        Copyright (c) 2017 <a href="/" role="navigation" aria-label="Footer and link to homepage"><strong>Restaurant Reviews</strong></a> All Rights Reserved.
+    </footer>
+    <script type="text/javascript" src="js/dbhelper.js"></script>
+    <script type="text/javascript" src="js/restaurant_info.js"></script>
+    <script src="js/serviceWorkerRegisration.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsJrOEGNtBE5LrNpeAe4M9d8w8cMytPrY&libraries=places&callback=initMap"></script>
+
+</body>
+
+</html>
